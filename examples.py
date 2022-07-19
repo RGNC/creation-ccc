@@ -54,22 +54,22 @@ def generate_random_formula(n, p):
 # True
 def example1():
     formula = (('x[1]', 'x[2]'), ('x[1]', 'x[2]'))
-    return get_init_multiset(formula)
+    return formula
 
 # True
 def example2():
     formula = (('x[1]', 'x[2]', 'x[3]'),)
-    return get_init_multiset(formula)
+    return formula
 
 # False
 def example3():
     formula = (('x[1]',), ('xb[1]', 'xb[2]'), ('x[2]',))
-    return get_init_multiset(formula)
+    return formula
 
 # True
 def example4():
     formula = (('x[1]', 'x[2]'), ('x[3]', 'x[4]'), ('x[5]', 'x[6]'), ('x[7]', 'x[8]'), ('x[9]', 'x[10]'))
-    return get_init_multiset(formula)
+    return formula
 
 
 def random_formula():
